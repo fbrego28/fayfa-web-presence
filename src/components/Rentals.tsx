@@ -163,11 +163,20 @@ const Rentals = () => {
           {selectedUnit?.images && selectedUnit.images.length > 0 && (
             <div className="relative px-4 pb-4">
               <div className="relative aspect-video bg-muted rounded-lg overflow-hidden">
-                <img
-                  src={selectedUnit.images[currentImage]}
-                  alt={`${selectedUnit.name} - Foto ${currentImage + 1}`}
-                  className="w-full h-full object-contain"
-                />
+                {/\.(mp4|mov|webm)$/i.test(selectedUnit.images[currentImage]) ? (
+                  <video
+                    key={currentImage}
+                    src={selectedUnit.images[currentImage]}
+                    controls
+                    className="w-full h-full object-contain"
+                  />
+                ) : (
+                  <img
+                    src={selectedUnit.images[currentImage]}
+                    alt={`${selectedUnit.name} - Foto ${currentImage + 1}`}
+                    className="w-full h-full object-contain"
+                  />
+                )}
               </div>
 
               {selectedUnit.images.length > 1 && (
