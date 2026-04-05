@@ -25,7 +25,7 @@ interface CurenaType {
 }
 
 const curenas: CurenaType[] = [
-  { name: "Chasis 20 pies", desc: "Cureña tipo chasis para contenedores de 20 pies. Ideal para transporte portuario y logístico.", images: [chasis20_1, chasis20_2, chasis20_3, chasis20_4] },
+  { name: "Chasis 20 pies", desc: "Cureña tipo chasis para contenedores de 20 pies. Ideal para transporte portuario y logístico.", images: [chasis20_1, chasis20_2, chasis20_3, chasis20_4, chasis20_5, chasis20_6] },
   { name: "Chasis 40 pies — 2 Ejes", desc: "Cureña tipo chasis para contenedores de 40 pies. Disponible para venta o alquiler.", images: [chasis40_2ejes_1, chasis40_2ejes_2, chasis40_2ejes_3] },
   { name: "Chasis 20 pies — 3 Ejes", desc: "Cureña tipo chasis de 3 ejes para contenedores de 20 pies. Año 2001. Mayor capacidad de carga.", images: [chasis20_3ejes_1, chasis20_3ejes_2] },
   { name: "Plataforma", desc: "Cureña tipo plataforma para carga general, maquinaria y materiales de construcción.", images: [] },
