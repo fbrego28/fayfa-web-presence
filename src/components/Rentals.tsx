@@ -20,6 +20,10 @@ import recolector2002_1 from "@/assets/rentals/recolector-2002-1.jpeg";
 import recolector2002_2 from "@/assets/rentals/recolector-2002-2.jpeg";
 import recolector2002_3 from "@/assets/rentals/recolector-2002-3.jpeg";
 import recolector2002_4 from "@/assets/rentals/recolector-2002-4.jpeg";
+import gruaDigger1 from "@/assets/rentals/grua-digger-1.mov";
+import gruaDigger2 from "@/assets/rentals/grua-digger-2.mp4";
+import gruaDigger3 from "@/assets/rentals/grua-digger-3.mp4";
+import gruaDigger4 from "@/assets/rentals/grua-digger-4.mp4";
 import {
   Dialog,
   DialogContent,
