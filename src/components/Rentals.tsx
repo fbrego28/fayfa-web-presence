@@ -26,6 +26,8 @@ import gruaDigger3 from "@/assets/rentals/grua-digger-3.mp4";
 import gruaDigger4 from "@/assets/rentals/grua-digger-4.mp4";
 import volvo2013_1 from "@/assets/rentals/volvo-2013-1.jpeg";
 import volvo2013_2 from "@/assets/rentals/volvo-2013-2.jpeg";
+import agua1 from "@/assets/rentals/agua-1.mp4";
+import agua2 from "@/assets/rentals/agua-2.mp4";
 import {
   Dialog,
   DialogContent,
@@ -41,7 +43,7 @@ interface Unit {
 }
 
 const units: Unit[] = [
-  { name: "Camión Distribuidor de Agua", desc: "Distribución de agua no potable. Ideal para obras de construcción, trabajos viales y operaciones municipales.", images: [] },
+  { name: "Camión Distribuidor de Agua", desc: "Distribución de agua no potable. Ideal para obras de construcción, trabajos viales y operaciones municipales.", images: [agua1, agua2] },
   { name: "Mini Cargador Caterpillar 246C", year: "2009", desc: "Cargador compacto tipo skid steer. Apto para excavación, manejo de materiales y espacios reducidos.", images: [] },
   { name: "Grúa Digger", year: "2009", desc: "Grúa especializada para instalación de postes. Diseñada para la siembra de postes de electricidad y operaciones similares.", images: [gruaDigger1, gruaDigger2, gruaDigger3, gruaDigger4] },
   { name: "Montacargas Caterpillar — 4 Toneladas", year: "1990", desc: "Montacargas de uso intensivo para bodegas, patios o aplicaciones industriales.", images: [montacargas1, montacargas2] },
