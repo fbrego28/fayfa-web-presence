@@ -152,11 +152,20 @@ const Carriages = () => {
           {selectedCurena?.images && selectedCurena.images.length > 0 && (
             <div className="relative px-4 pb-4">
               <div className="relative aspect-video bg-muted rounded-lg overflow-hidden">
-                <img
-                  src={selectedCurena.images[currentImage]}
-                  alt={`${selectedCurena.name} - Foto ${currentImage + 1}`}
-                  className="w-full h-full object-contain"
-                />
+                {/\.(mp4|mov|webm)$/i.test(selectedCurena.images[currentImage]) ? (
+                  <video
+                    key={currentImage}
+                    src={selectedCurena.images[currentImage]}
+                    controls
+                    className="w-full h-full object-contain"
+                  />
+                ) : (
+                  <img
+                    src={selectedCurena.images[currentImage]}
+                    alt={`${selectedCurena.name} - Foto ${currentImage + 1}`}
+                    className="w-full h-full object-contain"
+                  />
+                )}
               </div>
 
               {selectedCurena.images.length > 1 && (
