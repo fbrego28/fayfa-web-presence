@@ -26,6 +26,8 @@ import gruaDigger3 from "@/assets/rentals/grua-digger-3.mp4";
 import gruaDigger4 from "@/assets/rentals/grua-digger-4.mp4";
 import volvo2013_1 from "@/assets/rentals/volvo-2013-1.jpeg";
 import volvo2013_2 from "@/assets/rentals/volvo-2013-2.jpeg";
+import agua1 from "@/assets/rentals/agua-1.mp4";
+import agua2 from "@/assets/rentals/agua-2.mp4";
 import {
   Dialog,
   DialogContent,
