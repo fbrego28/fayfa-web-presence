@@ -9,6 +9,8 @@ import chasis20_3ejes_2 from "@/assets/curenas/chasis-20-3ejes-2.jpeg";
 import chasis40_2ejes_1 from "@/assets/curenas/curena-40-2ejes-1.jpeg";
 import chasis40_2ejes_2 from "@/assets/curenas/curena-40-2ejes-2.jpeg";
 import chasis40_2ejes_3 from "@/assets/curenas/curena-40-2ejes-3.jpeg";
+import chasis20_5 from "@/assets/curenas/chasis-20-5.mp4";
+import chasis20_6 from "@/assets/curenas/chasis-20-6.mp4";
 import {
   Dialog,
   DialogContent,
@@ -23,7 +25,7 @@ interface CurenaType {
 }
 
 const curenas: CurenaType[] = [
-  { name: "Chasis 20 pies", desc: "Cureña tipo chasis para contenedores de 20 pies. Ideal para transporte portuario y logístico.", images: [chasis20_1, chasis20_2, chasis20_3, chasis20_4] },
+  { name: "Chasis 20 pies", desc: "Cureña tipo chasis para contenedores de 20 pies. Ideal para transporte portuario y logístico.", images: [chasis20_1, chasis20_2, chasis20_3, chasis20_4, chasis20_5, chasis20_6] },
   { name: "Chasis 40 pies — 2 Ejes", desc: "Cureña tipo chasis para contenedores de 40 pies. Disponible para venta o alquiler.", images: [chasis40_2ejes_1, chasis40_2ejes_2, chasis40_2ejes_3] },
   { name: "Chasis 20 pies — 3 Ejes", desc: "Cureña tipo chasis de 3 ejes para contenedores de 20 pies. Año 2001. Mayor capacidad de carga.", images: [chasis20_3ejes_1, chasis20_3ejes_2] },
   { name: "Plataforma", desc: "Cureña tipo plataforma para carga general, maquinaria y materiales de construcción.", images: [] },
@@ -150,11 +152,20 @@ const Carriages = () => {
           {selectedCurena?.images && selectedCurena.images.length > 0 && (
             <div className="relative px-4 pb-4">
               <div className="relative aspect-video bg-muted rounded-lg overflow-hidden">
-                <img
-                  src={selectedCurena.images[currentImage]}
-                  alt={`${selectedCurena.name} - Foto ${currentImage + 1}`}
-                  className="w-full h-full object-contain"
-                />
+                {/\.(mp4|mov|webm)$/i.test(selectedCurena.images[currentImage]) ? (
+                  <video
+                    key={currentImage}
+                    src={selectedCurena.images[currentImage]}
+                    controls
+                    className="w-full h-full object-contain"
+                  />
+                ) : (
+                  <img
+                    src={selectedCurena.images[currentImage]}
+                    alt={`${selectedCurena.name} - Foto ${currentImage + 1}`}
+                    className="w-full h-full object-contain"
+                  />
+                )}
               </div>
 
               {selectedCurena.images.length > 1 && (
