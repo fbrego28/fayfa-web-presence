@@ -4,6 +4,8 @@ import freightliner1 from "@/assets/rentals/freightliner-m2-1.jpeg";
 import freightliner2 from "@/assets/rentals/freightliner-m2-2.jpeg";
 import freightliner3 from "@/assets/rentals/freightliner-m2-3.jpeg";
 import freightliner4 from "@/assets/rentals/freightliner-m2-4.jpeg";
+import montacargas1 from "@/assets/rentals/montacargas-cat-1.jpeg";
+import montacargas2 from "@/assets/rentals/montacargas-cat-2.jpeg";
 import {
   Dialog,
   DialogContent,
@@ -22,7 +24,7 @@ const units: Unit[] = [
   { name: "Camión Distribuidor de Agua", desc: "Distribución de agua no potable. Ideal para obras de construcción, trabajos viales y operaciones municipales.", images: [] },
   { name: "Mini Cargador Caterpillar 246C", year: "2009", desc: "Cargador compacto tipo skid steer. Apto para excavación, manejo de materiales y espacios reducidos.", images: [] },
   { name: "Grúa Digger", year: "2009", desc: "Grúa especializada para instalación de postes. Diseñada para la siembra de postes de electricidad y operaciones similares.", images: [] },
-  { name: "Montacargas Caterpillar — 4 Toneladas", year: "1990", desc: "Montacargas de uso intensivo para bodegas, patios o aplicaciones industriales.", images: [] },
+  { name: "Montacargas Caterpillar — 4 Toneladas", year: "1990", desc: "Montacargas de uso intensivo para bodegas, patios o aplicaciones industriales.", images: [montacargas1, montacargas2] },
   { name: "Camión Freightliner M2 Furgón Cerrado con Rampa Hidráulica", year: "2014", desc: "Camión de carga cerrado con rampa hidráulica de carga. Apto para transporte y distribución de mercadería.", images: [freightliner1, freightliner2, freightliner3, freightliner4] },
   { name: "Camión Recolector de Basura", year: "2002", desc: "Vehículo recolector de carga trasera para operaciones municipales o privadas de recolección de residuos.", images: [] },
   { name: "Camión Recolector de Basura", year: "2003", desc: "Segunda unidad disponible para contratos extendidos u operaciones simultáneas.", images: [] },
