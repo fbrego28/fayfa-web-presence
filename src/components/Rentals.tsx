@@ -6,6 +6,8 @@ import freightliner3 from "@/assets/rentals/freightliner-m2-3.jpeg";
 import freightliner4 from "@/assets/rentals/freightliner-m2-4.jpeg";
 import montacargas1 from "@/assets/rentals/montacargas-cat-1.jpeg";
 import montacargas2 from "@/assets/rentals/montacargas-cat-2.jpeg";
+import ottawa98_1 from "@/assets/rentals/ottawa-1998-1.jpeg";
+import ottawa98_2 from "@/assets/rentals/ottawa-1998-2.jpeg";
 import {
   Dialog,
   DialogContent,
@@ -28,7 +30,7 @@ const units: Unit[] = [
   { name: "Camión Freightliner M2 Furgón Cerrado con Rampa Hidráulica", year: "2014", desc: "Camión de carga cerrado con rampa hidráulica de carga. Apto para transporte y distribución de mercadería.", images: [freightliner1, freightliner2, freightliner3, freightliner4] },
   { name: "Camión Recolector de Basura", year: "2002", desc: "Vehículo recolector de carga trasera para operaciones municipales o privadas de recolección de residuos.", images: [] },
   { name: "Camión Recolector de Basura", year: "2003", desc: "Segunda unidad disponible para contratos extendidos u operaciones simultáneas.", images: [] },
-  { name: "Mula Patiera Ottawa", year: "1998", desc: "Mula patiera para movimiento de contenedores y remolques en patios, puertos y centros de distribución.", images: [] },
+  { name: "Mula Patiera Ottawa", year: "1998", desc: "Mula patiera para movimiento de contenedores y remolques en patios, puertos y centros de distribución.", images: [ottawa98_1, ottawa98_2] },
   { name: "Mula Patiera Ottawa", year: "2003", desc: "Segunda unidad disponible para operaciones simultáneas o contratos extendidos.", images: [] },
 ];
 
