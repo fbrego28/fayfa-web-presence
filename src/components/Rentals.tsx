@@ -6,6 +6,8 @@ import freightliner3 from "@/assets/rentals/freightliner-m2-3.jpeg";
 import freightliner4 from "@/assets/rentals/freightliner-m2-4.jpeg";
 import montacargas1 from "@/assets/rentals/montacargas-cat-1.jpeg";
 import montacargas2 from "@/assets/rentals/montacargas-cat-2.jpeg";
+import ottawa98_1 from "@/assets/rentals/ottawa-1998-1.jpeg";
+import ottawa98_2 from "@/assets/rentals/ottawa-1998-2.jpeg";
 import {
   Dialog,
   DialogContent,
