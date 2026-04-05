@@ -1,5 +1,9 @@
 import { useState } from "react";
 import { MessageSquare, Truck, ChevronLeft, ChevronRight, ImageIcon } from "lucide-react";
+import freightliner1 from "@/assets/rentals/freightliner-m2-1.jpeg";
+import freightliner2 from "@/assets/rentals/freightliner-m2-2.jpeg";
+import freightliner3 from "@/assets/rentals/freightliner-m2-3.jpeg";
+import freightliner4 from "@/assets/rentals/freightliner-m2-4.jpeg";
 import {
   Dialog,
   DialogContent,
