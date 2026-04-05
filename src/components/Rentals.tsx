@@ -55,7 +55,7 @@ const units: Unit[] = [
   { name: "Montacargas Caterpillar — 4 Toneladas", year: "1990", desc: "Montacargas de uso intensivo para bodegas, patios o aplicaciones industriales.", images: [montacargas1, montacargas2] },
   { name: "Camión Freightliner M2 Furgón Cerrado con Rampa Hidráulica", year: "2014", desc: "Camión de carga cerrado con rampa hidráulica de carga. Apto para transporte y distribución de mercadería.", images: [freightliner1, freightliner2, freightliner3, freightliner4] },
   { name: "Camión Recolector de Basura", year: "2002", desc: "Vehículo recolector de carga trasera para operaciones municipales o privadas de recolección de residuos.", images: [recolector2002_1, recolector2002_2, recolector2002_3, recolector2002_4] },
-  { name: "Camión Recolector de Basura", year: "2003", desc: "Segunda unidad disponible para contratos extendidos u operaciones simultáneas.", images: [] },
+  { name: "Camión Recolector de Basura", year: "2003", desc: "Segunda unidad disponible para contratos extendidos u operaciones simultáneas.", images: [recolector2003_1, recolector2003_2, recolector2003_3, recolector2003_4] },
   { name: "Mula Patiera Ottawa", year: "1998", desc: "Mula patiera para movimiento de contenedores y remolques en patios, puertos y centros de distribución.", images: [ottawa98_1, ottawa98_2, ottawa98_3] },
   { name: "Mula Patiera Ottawa", year: "2003", desc: "Segunda unidad disponible para operaciones simultáneas o contratos extendidos.", images: [ottawa2003_1] },
   { name: "Camión Freightliner M2 Plataforma", year: "2006", desc: "Camión con plataforma abierta para transporte de carga pesada, maquinaria y materiales de construcción.", images: [freightPlat1, freightPlat2, freightPlat3, freightPlat4, freightPlat5] },
