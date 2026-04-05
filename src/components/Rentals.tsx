@@ -122,7 +122,7 @@ const Rentals = () => {
                 {hasImages && (
                   <div className="mt-3 flex items-center gap-1.5 text-xs text-primary font-semibold">
                     <ImageIcon size={14} />
-                    <span>Ver fotos ({u.images!.length})</span>
+                    <span>Ver multimedia ({u.images!.length})</span>
                   </div>
                 )}
               </div>
