@@ -6,6 +6,9 @@ import chasis20_3 from "@/assets/curenas/chasis-20-3.jpeg";
 import chasis20_4 from "@/assets/curenas/chasis-20-4.jpeg";
 import chasis20_3ejes_1 from "@/assets/curenas/chasis-20-3ejes-1.jpeg";
 import chasis20_3ejes_2 from "@/assets/curenas/chasis-20-3ejes-2.jpeg";
+import chasis40_2ejes_1 from "@/assets/curenas/curena-40-2ejes-1.jpeg";
+import chasis40_2ejes_2 from "@/assets/curenas/curena-40-2ejes-2.jpeg";
+import chasis40_2ejes_3 from "@/assets/curenas/curena-40-2ejes-3.jpeg";
 import {
   Dialog,
   DialogContent,
