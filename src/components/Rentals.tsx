@@ -45,6 +45,7 @@ const units: Unit[] = [
   { name: "Mula Patiera Ottawa", year: "1998", desc: "Mula patiera para movimiento de contenedores y remolques en patios, puertos y centros de distribución.", images: [ottawa98_1, ottawa98_2] },
   { name: "Mula Patiera Ottawa", year: "2003", desc: "Segunda unidad disponible para operaciones simultáneas o contratos extendidos.", images: [] },
   { name: "Camión Freightliner M2 Plataforma", year: "2006", desc: "Camión con plataforma abierta para transporte de carga pesada, maquinaria y materiales de construcción.", images: [freightPlat1, freightPlat2, freightPlat3, freightPlat4, freightPlat5] },
+  { name: "Mula Patiera Ottawa", year: "2000", desc: "Mula patiera para movimiento de contenedores y remolques en patios, puertos y centros de distribución.", images: [ottawa2000_1, ottawa2000_2, ottawa2000_3] },
 ];
 
 const Rentals = () => {
