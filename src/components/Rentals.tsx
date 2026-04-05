@@ -8,6 +8,11 @@ import montacargas1 from "@/assets/rentals/montacargas-cat-1.jpeg";
 import montacargas2 from "@/assets/rentals/montacargas-cat-2.jpeg";
 import ottawa98_1 from "@/assets/rentals/ottawa-1998-1.jpeg";
 import ottawa98_2 from "@/assets/rentals/ottawa-1998-2.jpeg";
+import freightPlat1 from "@/assets/rentals/freightliner-m2-plat-1.jpeg";
+import freightPlat2 from "@/assets/rentals/freightliner-m2-plat-2.jpeg";
+import freightPlat3 from "@/assets/rentals/freightliner-m2-plat-3.jpeg";
+import freightPlat4 from "@/assets/rentals/freightliner-m2-plat-4.jpeg";
+import freightPlat5 from "@/assets/rentals/freightliner-m2-plat-5.jpeg";
 import recolector2002_1 from "@/assets/rentals/recolector-2002-1.jpeg";
 import recolector2002_2 from "@/assets/rentals/recolector-2002-2.jpeg";
 import recolector2002_3 from "@/assets/rentals/recolector-2002-3.jpeg";
@@ -36,6 +41,7 @@ const units: Unit[] = [
   { name: "Camión Recolector de Basura", year: "2003", desc: "Segunda unidad disponible para contratos extendidos u operaciones simultáneas.", images: [] },
   { name: "Mula Patiera Ottawa", year: "1998", desc: "Mula patiera para movimiento de contenedores y remolques en patios, puertos y centros de distribución.", images: [ottawa98_1, ottawa98_2] },
   { name: "Mula Patiera Ottawa", year: "2003", desc: "Segunda unidad disponible para operaciones simultáneas o contratos extendidos.", images: [] },
+  { name: "Camión Freightliner M2 Plataforma", year: "2006", desc: "Camión con plataforma abierta para transporte de carga pesada, maquinaria y materiales de construcción.", images: [freightPlat1, freightPlat2, freightPlat3, freightPlat4, freightPlat5] },
 ];
 
 const Rentals = () => {
