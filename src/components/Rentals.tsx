@@ -28,6 +28,7 @@ import volvo2013_1 from "@/assets/rentals/volvo-2013-1.jpeg";
 import volvo2013_2 from "@/assets/rentals/volvo-2013-2.jpeg";
 import agua1 from "@/assets/rentals/agua-1.mp4";
 import agua2 from "@/assets/rentals/agua-2.mp4";
+import ottawa2003_1 from "@/assets/rentals/ottawa-2003-1.mp4";
 import {
   Dialog,
   DialogContent,
@@ -51,7 +52,7 @@ const units: Unit[] = [
   { name: "Camión Recolector de Basura", year: "2002", desc: "Vehículo recolector de carga trasera para operaciones municipales o privadas de recolección de residuos.", images: [recolector2002_1, recolector2002_2, recolector2002_3, recolector2002_4] },
   { name: "Camión Recolector de Basura", year: "2003", desc: "Segunda unidad disponible para contratos extendidos u operaciones simultáneas.", images: [] },
   { name: "Mula Patiera Ottawa", year: "1998", desc: "Mula patiera para movimiento de contenedores y remolques en patios, puertos y centros de distribución.", images: [ottawa98_1, ottawa98_2] },
-  { name: "Mula Patiera Ottawa", year: "2003", desc: "Segunda unidad disponible para operaciones simultáneas o contratos extendidos.", images: [] },
+  { name: "Mula Patiera Ottawa", year: "2003", desc: "Segunda unidad disponible para operaciones simultáneas o contratos extendidos.", images: [ottawa2003_1] },
   { name: "Camión Freightliner M2 Plataforma", year: "2006", desc: "Camión con plataforma abierta para transporte de carga pesada, maquinaria y materiales de construcción.", images: [freightPlat1, freightPlat2, freightPlat3, freightPlat4, freightPlat5] },
   { name: "Mula Patiera Ottawa", year: "2000", desc: "Mula patiera para movimiento de contenedores y remolques en patios, puertos y centros de distribución.", images: [ottawa2000_1, ottawa2000_2, ottawa2000_3] },
   { name: "Cabezal Volvo — Motor D11", year: "2013", desc: "Cabezal Volvo con motor D11, caja automática y retardador. Ideal para transporte pesado de larga distancia.", images: [volvo2013_1, volvo2013_2] },
