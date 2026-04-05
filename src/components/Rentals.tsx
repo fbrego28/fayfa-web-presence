@@ -29,6 +29,7 @@ import volvo2013_2 from "@/assets/rentals/volvo-2013-2.jpeg";
 import agua1 from "@/assets/rentals/agua-1.mp4";
 import agua2 from "@/assets/rentals/agua-2.mp4";
 import ottawa2003_1 from "@/assets/rentals/ottawa-2003-1.mp4";
+import ottawa98_3 from "@/assets/rentals/ottawa-1998-3.mp4";
 import {
   Dialog,
   DialogContent,
