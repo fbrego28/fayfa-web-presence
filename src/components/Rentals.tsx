@@ -30,6 +30,10 @@ import agua1 from "@/assets/rentals/agua-1.mp4";
 import agua2 from "@/assets/rentals/agua-2.mp4";
 import ottawa2003_1 from "@/assets/rentals/ottawa-2003-1.mp4";
 import ottawa98_3 from "@/assets/rentals/ottawa-1998-3.mp4";
+import recolector2003_1 from "@/assets/rentals/recolector-2003-1.jpeg";
+import recolector2003_2 from "@/assets/rentals/recolector-2003-2.jpeg";
+import recolector2003_3 from "@/assets/rentals/recolector-2003-3.jpeg";
+import recolector2003_4 from "@/assets/rentals/recolector-2003-4.jpeg";
 import {
   Dialog,
   DialogContent,
