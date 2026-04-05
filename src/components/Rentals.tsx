@@ -24,6 +24,8 @@ import gruaDigger1 from "@/assets/rentals/grua-digger-1.mov";
 import gruaDigger2 from "@/assets/rentals/grua-digger-2.mp4";
 import gruaDigger3 from "@/assets/rentals/grua-digger-3.mp4";
 import gruaDigger4 from "@/assets/rentals/grua-digger-4.mp4";
+import volvo2013_1 from "@/assets/rentals/volvo-2013-1.jpeg";
+import volvo2013_2 from "@/assets/rentals/volvo-2013-2.jpeg";
 import {
   Dialog,
   DialogContent,
@@ -50,6 +52,7 @@ const units: Unit[] = [
   { name: "Mula Patiera Ottawa", year: "2003", desc: "Segunda unidad disponible para operaciones simultáneas o contratos extendidos.", images: [] },
   { name: "Camión Freightliner M2 Plataforma", year: "2006", desc: "Camión con plataforma abierta para transporte de carga pesada, maquinaria y materiales de construcción.", images: [freightPlat1, freightPlat2, freightPlat3, freightPlat4, freightPlat5] },
   { name: "Mula Patiera Ottawa", year: "2000", desc: "Mula patiera para movimiento de contenedores y remolques en patios, puertos y centros de distribución.", images: [ottawa2000_1, ottawa2000_2, ottawa2000_3] },
+  { name: "Cabezal Volvo — Motor D11", year: "2013", desc: "Cabezal Volvo con motor D11, caja automática y retardador. Ideal para transporte pesado de larga distancia.", images: [volvo2013_1, volvo2013_2] },
 ];
 
 const Rentals = () => {
