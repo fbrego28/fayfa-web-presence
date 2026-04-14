@@ -1,64 +1,61 @@
-import { MessageSquare, Truck, Wrench, Package } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
-
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-16">
-      {/* Background */}
-      <div className="absolute inset-0">
-        <img
-          src={heroBg}
-          alt="Patio de camiones pesados al anochecer"
-          width={1920}
-          height={1080}
-          className="w-full h-full object-cover"
+    <section className="relative h-screen overflow-hidden bg-[#f9fafb]">
+      {/* Video Background */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source
+          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260328_091828_e240eb17-6edc-4129-ad9d-98678e3fd238.mp4"
+          type="video/mp4"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background" />
-      </div>
+      </video>
 
-      <div className="relative container py-20 text-center">
-        {/* Trust badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 mb-8">
-          <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-          <span className="font-display text-xs font-semibold uppercase tracking-widest text-primary">
-            Sirviendo a Costa Rica desde 2011
-          </span>
-        </div>
+      {/* Content */}
+      <div className="relative h-full flex flex-col">
+        <div className="flex-1 flex items-center justify-center -mt-20">
+          <div className="text-center px-4">
+            <p className="text-sm font-semibold text-gray-600 tracking-wider uppercase mb-4">
+              CAMIONES
+            </p>
 
-        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase leading-[0.95] mb-6 text-foreground">
-          Soluciones en Reparación,{" "}
-          <span className="text-gradient">Alquiler y Repuestos</span>{" "}
-          para Camiones
-        </h1>
+            <h1>
+              <span className="block text-6xl md:text-7xl lg:text-8xl font-normal text-gray-500 leading-none tracking-tighter">
+                Alquiler y Repuestos
+              </span>
+              <span className="block text-6xl md:text-7xl lg:text-8xl font-normal leading-none tracking-tighter -mt-3" style={{ color: '#202A36' }}>
+                Para Camiones.
+              </span>
+            </h1>
 
-        <p className="max-w-2xl mx-auto text-base sm:text-lg text-muted-foreground mb-10">
-          Más de 13 años brindando servicios confiables y profesionales para
-          camiones y equipo pesado en toda Costa Rica.
-        </p>
+            <p className="text-lg md:text-xl text-gray-600 mb-6 max-w-2xl mx-auto mt-6">
+              Respaldo para cada kilómetro
+            </p>
 
-        {/* CTAs */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="#reparaciones"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-md bg-primary text-primary-foreground font-display font-bold uppercase tracking-wider text-sm hover:bg-amber-hover transition-colors"
-          >
-            <Wrench size={18} />
-            Solicitar Cotización de Reparación
-          </a>
-          <a
-            href="#alquileres"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-md border border-primary/50 text-primary font-display font-bold uppercase tracking-wider text-sm hover:bg-primary/10 transition-colors"
-          >
-            <Truck size={18} />
-            Alquilar Equipo
-          </a>
-          <a
-            href="#repuestos"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-md border border-border text-foreground font-display font-bold uppercase tracking-wider text-sm hover:bg-secondary transition-colors"
-          >
-            <Package size={18} />
-            Buscar Repuestos
-          </a>
+            <div className="flex items-center justify-center gap-4">
+              <a
+                href="#reparaciones"
+                className="px-6 py-2.5 rounded-full bg-gray-300 text-gray-800 font-medium hover:bg-gray-400 transition-colors"
+              >
+                Discover
+              </a>
+              <a
+                href="https://wa.me/50688888888"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-2.5 rounded-full text-white font-medium transition-colors"
+                style={{ backgroundColor: '#202A36' }}
+                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#1a2229')}
+                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#202A36')}
+              >
+                Book Now
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
