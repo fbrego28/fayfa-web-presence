@@ -9,13 +9,9 @@ const Hero = () => {
         muted
         loop
         playsInline
+        src={heroVideo.url}
         className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source
-          src={heroVideo.url}
-          type="video/mp4"
-        />
-      </video>
+      />
 
       {/* Content */}
       <div className="relative h-full flex flex-col">
