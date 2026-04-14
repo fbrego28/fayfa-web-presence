@@ -1,29 +1,36 @@
 
 
-## Add Image Gallery to Rental Equipment Cards
+## Plan: Redesign Landing Page with Premium Video Hero
 
-Yes, this is absolutely possible. When a user taps on any equipment card (e.g., "Camión Recolector de Basura"), a dialog/lightbox will open showing photos of that specific unit.
+### What changes
+Replace the current dark industrial-themed Hero and Header with a clean, modern, premium design featuring a full-screen video background and minimalist typography.
 
-### How it will work
+### Files to modify
 
-1. **Modify `Rentals.tsx`** — Add an `images` array field to each unit in the data. Each card becomes clickable.
+1. **`src/components/Hero.tsx`** -- Complete rewrite:
+   - Full-screen video background (CloudFront URL, autoplay, muted, loop, playsInline, object-cover)
+   - Centered hero content with overlapping heading effect ("Alquiler y Repuestos" / "Para Camiones.")
+   - "CAMIONES" uppercase label, subtitle, two CTA buttons (Discover + Book Now)
+   - Uses Inter font, light/gray color palette over the video
 
-2. **Image Lightbox** — Use the existing Radix `Dialog` component to create a fullscreen gallery overlay. Inside, use a simple carousel (prev/next arrows) to browse multiple photos per unit.
+2. **`src/components/Header.tsx`** -- Redesign to match:
+   - Clean nav with "Fayfa" brand name (gray-900 tones)
+   - Desktop links: Start, Story, Rates, Benefits, FAQ
+   - Mobile hamburger with slide-down menu (white/95 backdrop blur)
+   - Max-width 7xl, px-8 py-6 spacing
+   - Remove fixed positioning dark background, use transparent overlay style
 
-3. **Structure per unit**:
-   - User taps a card → Dialog opens with the unit's name as title
-   - Shows images in a carousel/slideshow with navigation arrows
-   - Close button to dismiss
+3. **`src/index.css`** -- Minor updates:
+   - Ensure Inter font import is present (already imported)
+   - Add any needed utility classes for the overlap effect
 
-4. **Images** — You'll upload the photos for each unit through chat. I'll wire them directly into the corresponding unit's `images` array.
+4. **`src/App.css`** -- Remove or clean up the old Vite boilerplate styles (max-width constraint on #root conflicts with full-screen hero)
 
-### Technical details
+### What stays the same
+- All sections below the hero (Repairs, Rentals, Parts, Carriages, FAQ, Contact, Footer) remain unchanged
+- WhatsApp float stays
+- The existing dark theme CSS variables stay (used by other sections)
 
-- **No new dependencies needed** — will use the existing `Dialog` component + simple state-based image carousel
-- **Files modified**: `src/components/Rentals.tsx`
-- **Mobile-friendly**: swipe-friendly layout, large tap targets for navigation
-
-### Next step
-
-Send me the images grouped by equipment (e.g., "these are for Camión Recolector 2002", "these for Mini Cargador", etc.) and I'll wire everything up.
+### Reversibility
+All changes can be reverted using Lovable's history/revert feature as discussed.
 
