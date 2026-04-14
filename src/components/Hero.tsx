@@ -1,3 +1,5 @@
+import heroVideo from '../assets/hero-video.mp4.asset.json';
+
 const Hero = () => {
   return (
     <section className="relative h-screen overflow-hidden bg-[#f9fafb]">
