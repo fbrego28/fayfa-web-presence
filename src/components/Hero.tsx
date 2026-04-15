@@ -23,10 +23,10 @@ const Hero = () => {
             </p>
 
             <h1>
-              <span className="block text-6xl md:text-7xl lg:text-8xl font-normal text-gray-500 leading-none tracking-tighter">
+              <span className="block text-6xl md:text-7xl lg:text-8xl font-normal text-white leading-none tracking-tighter">
                 Alquiler y Repuestos
               </span>
-              <span className="block text-6xl md:text-7xl lg:text-8xl font-normal leading-none tracking-tighter -mt-3" style={{ color: '#202A36' }}>
+              <span className="block text-6xl md:text-7xl lg:text-8xl font-normal leading-none tracking-tighter -mt-3 text-gray-400">
                 Para Camiones.
               </span>
             </h1>
@@ -37,10 +37,10 @@ const Hero = () => {
 
             <div className="flex items-center justify-center gap-4">
               <a
-                href="#reparaciones"
+                href="#contacto"
                 className="px-6 py-2.5 rounded-full bg-gray-300 text-gray-800 font-medium hover:bg-gray-400 transition-colors"
               >
-                Discover
+                Cotización
               </a>
               <a
                 href="#contacto"
@@ -49,7 +49,7 @@ const Hero = () => {
                 onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#1a2229')}
                 onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#202A36')}
               >
-                Book Now
+                Contáctenos
               </a>
             </div>
           </div>
