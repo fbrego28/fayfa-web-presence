@@ -10,7 +10,8 @@ const Hero = () => {
         loop
         playsInline
         src={heroVideo.url}
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-center"
+        style={{ objectFit: 'cover', transform: 'none' }}
       />
 
       {/* Content */}
@@ -42,9 +43,7 @@ const Hero = () => {
                 Discover
               </a>
               <a
-                href="https://wa.me/50688888888"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#contacto"
                 className="px-6 py-2.5 rounded-full text-white font-medium transition-colors"
                 style={{ backgroundColor: '#202A36' }}
                 onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#1a2229')}
