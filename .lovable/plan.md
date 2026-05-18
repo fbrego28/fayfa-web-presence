@@ -14,8 +14,8 @@ Replace the current dark industrial-themed Hero and Header with a clean, modern,
    - Uses Inter font, light/gray color palette over the video
 
 2. **`src/components/Header.tsx`** -- Redesign to match:
-   - Clean nav with "Fayfa" brand name (gray-900 tones)
-   - Desktop links: Start, Story, Rates, Benefits, FAQ
+   - Clean nav with "Repuestos FayFa" brand name (gray-900 tones)
+   - Desktop links: Inicio, Reparaciones, Equipos, Repuestos, FAQ
    - Mobile hamburger with slide-down menu (white/95 backdrop blur)
    - Max-width 7xl, px-8 py-6 spacing
    - Remove fixed positioning dark background, use transparent overlay style
