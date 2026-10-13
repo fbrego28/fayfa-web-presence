@@ -1,5 +1,6 @@
 import { MessageSquare, Mail, Instagram, MapPin, Clock } from "lucide-react";
 import logo from "@/assets/brand/fayfa-logo-sin-eslogan-invertido.svg";
+import { yearsInBusiness } from "@/lib/business";
 
 const quickLinks = [
   { href: "#reparaciones", label: "Reparaciones" },
@@ -18,7 +19,7 @@ const Footer = () => (
         <div>
           <img src={logo} alt="FAYFA" width={2137} height={560} className="w-48 h-auto mb-6" />
           <p className="text-sm">
-            14 años de experiencia en camiones, repuestos y equipo pesado.
+            {yearsInBusiness()} años de experiencia en camiones, repuestos y equipo pesado.
           </p>
         </div>
 
@@ -95,7 +96,7 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-white/15 pt-6 text-center text-xs text-white/60">
-        © 2026 FayFa. Todos los derechos reservados.
+        © {new Date().getFullYear()} FayFa. Todos los derechos reservados.
       </div>
     </div>
   </footer>
