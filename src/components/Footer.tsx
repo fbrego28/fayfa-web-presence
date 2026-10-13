@@ -96,7 +96,7 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-white/15 pt-6 text-center text-xs text-white/60">
-        © {new Date().getFullYear()} FayFa. Todos los derechos reservados.
+        © {new Date().getFullYear()} Fa&amp;Fa S.A. Todos los derechos reservados.
       </div>
     </div>
   </footer>

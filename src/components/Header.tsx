@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/brand/fayfa-logo-invertido.svg";
-import logoCompact from "@/assets/brand/fayfa-logo-sin-eslogan-invertido.svg";
+import logo from "@/assets/brand/fayfa-logo-pablo-brenes-invertido.svg";
+import logoCompact from "@/assets/brand/fayfa-logo-pablo-brenes-sin-eslogan-invertido.svg";
 
 const navLinks = [
   { href: "#reparaciones", label: "Reparaciones" },
@@ -20,8 +20,8 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 py-3 flex items-center justify-between gap-8">
         {/* Logo with slogan needs 300px min width (brand guide); below sm there is no room, so use the version without slogan (150px min) */}
         <a href="#" className="shrink-0" aria-label="Repuestos FayFa — Inicio">
-          <img src={logo} alt="FAYFA — Equipo pesado, industria, transporte" width={2137} height={560} className="hidden sm:block h-20 w-auto" />
-          <img src={logoCompact} alt="FAYFA" width={2137} height={560} className="sm:hidden h-10 w-auto" />
+          <img src={logo} alt="FAYFA Pablo Brenes — Equipo pesado, industria, transporte" width={2137} height={640} className="hidden sm:block h-24 w-auto" />
+          <img src={logoCompact} alt="FAYFA Pablo Brenes" width={2137} height={600} className="sm:hidden h-11 w-auto" />
         </a>
 
         {/* Desktop nav */}
