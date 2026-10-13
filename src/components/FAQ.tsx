@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { yearsInBusiness } from "@/lib/business";
 
 const faqs = [
   {
@@ -17,7 +18,7 @@ const faqs = [
   { q: "¿Ofrecen servicio de alquiler?", a: "Sí. Contamos con una flota de camiones y equipo disponible para alquiler, incluyendo camiones cisterna, cargadores, grúas, montacargas y camiones recolectores." },
   { q: "¿Cómo solicito una cotización?", a: "Use los botones de WhatsApp en cada sección de servicio o complete el formulario de contacto. Cuanto más detalle nos brinde, más rápida será nuestra respuesta." },
   { q: "¿Qué repuestos manejan?", a: "Manejamos y conseguimos repuestos para una amplia variedad de camiones y equipo pesado. Contáctenos con los datos de su vehículo y el repuesto específico que necesita." },
-  { q: "¿Cuánto tiempo lleva el negocio?", a: "Llevamos 13 años en operación, desde agosto del 2011. El 3 de agosto celebramos 14 años." },
+  { q: "¿Cuánto tiempo lleva el negocio?", a: `Llevamos ${yearsInBusiness()} años en operación, desde el 3 de agosto del 2011.` },
   { q: "¿Importan las cureñas?", a: "Sí. Importamos cureñas directamente desde Estados Unidos por vía marítima, las restauramos y las vendemos localmente. También están disponibles en alquiler." },
   { q: "¿A qué número llamo para pagos o estados de cuenta?", a: "Para pagos, cobros y estados de cuenta, comuníquese con nuestra oficina al +506 7204 3545." },
 ];

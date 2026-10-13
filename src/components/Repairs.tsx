@@ -1,5 +1,6 @@
 import { MessageSquare } from "lucide-react";
 import workshopImg from "@/assets/workshop.jpg";
+import { yearsInBusiness } from "@/lib/business";
 
 const Repairs = () => (
   <section id="reparaciones" className="py-20 bg-secondary">
@@ -13,7 +14,7 @@ const Repairs = () => (
           <p className="text-muted-foreground leading-relaxed mb-8">
             Damos servicio a todo tipo de camiones y equipo pesado, desde
             vehículos comerciales livianos hasta camiones de carga pesada y
-            maquinaria de construcción. Con más de 13 años de experiencia,
+            maquinaria de construcción. Con más de {yearsInBusiness()} años de experiencia,
             nuestro equipo realiza diagnósticos, reparaciones mecánicas y
             mantenimiento con precisión y eficiencia. Trabajamos con operadores
             individuales y cuentas de flotillas corporativas.
