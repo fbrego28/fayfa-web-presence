@@ -1,13 +1,13 @@
 import { MessageSquare, HelpCircle } from "lucide-react";
 
 const NotSure = () => (
-  <section className="py-16 bg-primary">
+  <section className="py-16 bg-navy">
     <div className="container text-center">
-      <HelpCircle size={40} className="text-primary-foreground mx-auto mb-4" />
-      <h2 className="font-display text-2xl sm:text-3xl font-extrabold uppercase text-primary-foreground mb-3">
+      <HelpCircle size={40} className="text-primary mx-auto mb-4" />
+      <h2 className="font-display text-2xl sm:text-3xl font-extrabold uppercase text-white mb-3">
         ¿No sabe qué necesita?
       </h2>
-      <p className="max-w-lg mx-auto text-primary-foreground/80 mb-6">
+      <p className="max-w-lg mx-auto text-white/80 mb-6">
         Si no está seguro de cuál servicio se adapta mejor a su situación,
         contáctenos directamente. Evaluamos su necesidad y le recomendamos la
         mejor solución.

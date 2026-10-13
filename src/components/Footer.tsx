@@ -1,4 +1,5 @@
 import { MessageSquare, Mail, Instagram, MapPin, Clock } from "lucide-react";
+import logo from "@/assets/brand/fayfa-logo-sin-eslogan-invertido.svg";
 
 const quickLinks = [
   { href: "#reparaciones", label: "Reparaciones" },
@@ -10,45 +11,43 @@ const quickLinks = [
 ];
 
 const Footer = () => (
-  <footer className="bg-card border-t border-border py-16">
+  <footer className="bg-navy text-white/75 pt-16 pb-24 sm:pb-16">
     <div className="container">
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
         {/* Brand */}
         <div>
-          <h3 className="font-display text-xl font-bold text-primary mb-2">
-            REPUESTOS FAYFA
-          </h3>
-          <p className="text-sm text-muted-foreground">
+          <img src={logo} alt="FAYFA" width={2137} height={560} className="w-48 h-auto mb-6" />
+          <p className="text-sm">
             13 años de experiencia en camiones, repuestos y equipo pesado.
           </p>
         </div>
 
         {/* Contact */}
-        <div className="space-y-3 text-sm text-muted-foreground">
+        <div className="space-y-3 text-sm">
           <div className="flex items-start gap-2">
-            <MapPin size={14} className="text-primary mt-0.5 shrink-0" />
+            <MapPin size={14} className="text-white/60 mt-0.5 shrink-0" />
             <span>
               25 metros norte de la Iglesia Católica, Lourdes de Aguacaliente,
               Cartago, Costa Rica
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <Clock size={14} className="text-primary shrink-0" />
+            <Clock size={14} className="text-white/60 shrink-0" />
             <span>Lun–Sáb 8:00 a.m. – 5:00 p.m. | Dom cerrado</span>
           </div>
           <div className="flex items-center gap-2">
-            <Mail size={14} className="text-primary shrink-0" />
-            <a href="mailto:repuestosfayfa@gmail.com" className="hover:text-primary transition-colors">
+            <Mail size={14} className="text-white/60 shrink-0" />
+            <a href="mailto:repuestosfayfa@gmail.com" className="hover:text-white hover:underline transition-colors">
               repuestosfayfa@gmail.com
             </a>
           </div>
           <div className="flex items-center gap-2">
-            <Instagram size={14} className="text-primary shrink-0" />
+            <Instagram size={14} className="text-white/60 shrink-0" />
             <a
               href="https://www.instagram.com/repuestos_pablo_brenes"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-primary transition-colors"
+              className="hover:text-white hover:underline transition-colors"
             >
               @repuestos_pablo_brenes
             </a>
@@ -56,20 +55,20 @@ const Footer = () => (
         </div>
 
         {/* WhatsApp */}
-        <div className="space-y-3 text-sm text-muted-foreground">
+        <div className="space-y-3 text-sm">
           <div className="flex items-center gap-2">
             <MessageSquare size={14} className="text-whatsapp shrink-0" />
             <div>
-              <span className="font-semibold text-foreground">Dueño:</span>{" "}
-              <a href="https://wa.me/50683423216" className="hover:text-primary transition-colors">+506 8342 3216</a>
+              <span className="font-semibold text-white">Dueño:</span>{" "}
+              <a href="https://wa.me/50683423216" className="hover:text-white hover:underline transition-colors">+506 8342 3216</a>
             </div>
           </div>
           <p className="pl-5 text-xs">Consultas generales, reparaciones, alquileres y cureñas</p>
           <div className="flex items-center gap-2">
             <MessageSquare size={14} className="text-whatsapp shrink-0" />
             <div>
-              <span className="font-semibold text-foreground">Oficina:</span>{" "}
-              <a href="https://wa.me/50672043545" className="hover:text-primary transition-colors">+506 7204 3545</a>
+              <span className="font-semibold text-white">Oficina:</span>{" "}
+              <a href="https://wa.me/50672043545" className="hover:text-white hover:underline transition-colors">+506 7204 3545</a>
             </div>
           </div>
           <p className="pl-5 text-xs">Pagos, cobros, estados de cuenta y repuestos</p>
@@ -77,7 +76,7 @@ const Footer = () => (
 
         {/* Quick links */}
         <div>
-          <h4 className="font-display text-sm font-bold uppercase text-foreground mb-3">
+          <h4 className="font-display text-sm font-bold uppercase text-white mb-3">
             Enlaces Rápidos
           </h4>
           <ul className="space-y-2">
@@ -85,7 +84,7 @@ const Footer = () => (
               <li key={l.href}>
                 <a
                   href={l.href}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="text-sm hover:text-white hover:underline transition-colors"
                 >
                   {l.label}
                 </a>
@@ -95,7 +94,7 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="border-t border-border pt-6 text-center text-xs text-muted-foreground">
+      <div className="border-t border-white/15 pt-6 text-center text-xs text-white/60">
         © 2025 Repuestos Fayfa. Todos los derechos reservados.
       </div>
     </div>

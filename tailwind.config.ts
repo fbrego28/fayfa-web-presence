@@ -15,7 +15,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Barlow Condensed"', 'sans-serif'],
+        display: ['Montserrat', 'sans-serif'],
         body: ['Inter', 'sans-serif'],
       },
       colors: {
@@ -52,15 +52,8 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        amber: {
-          DEFAULT: "hsl(var(--amber))",
-          hover: "hsl(var(--amber-hover))",
-        },
-        navy: {
-          DEFAULT: "hsl(var(--navy))",
-          light: "hsl(var(--navy-light))",
-          lighter: "hsl(var(--navy-lighter))",
-        },
+        navy: "hsl(var(--navy))",
+        steel: "hsl(var(--steel))",
         whatsapp: {
           DEFAULT: "hsl(var(--whatsapp))",
           hover: "hsl(var(--whatsapp-hover))",

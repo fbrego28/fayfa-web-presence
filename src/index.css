@@ -1,58 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * FAYFA brand palette (Guía de marca):
+ *   Azul marino      #03294D  209 92% 16%
+ *   Azul corporativo #0172DA  209 99% 43%
+ *   Gris acero       #7A8694  212 11% 53%
+ *   Gris claro       #E5E8ED  218 18% 91%
+ * Light theme for content sections; navy for header, hero, CTA band and footer.
+ */
 @layer base {
   :root {
-    --background: 220 20% 10%;
-    --foreground: 45 10% 92%;
+    --background: 0 0% 100%;
+    --foreground: 209 92% 16%;
 
-    --card: 220 18% 14%;
-    --card-foreground: 45 10% 92%;
+    --card: 0 0% 100%;
+    --card-foreground: 209 92% 16%;
 
-    --popover: 220 18% 14%;
-    --popover-foreground: 45 10% 92%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 209 92% 16%;
 
-    --primary: 42 100% 50%;
-    --primary-foreground: 220 20% 10%;
+    --primary: 209 99% 43%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 15% 18%;
-    --secondary-foreground: 45 10% 92%;
+    --secondary: 218 18% 91%;
+    --secondary-foreground: 209 92% 16%;
 
-    --muted: 220 15% 20%;
-    --muted-foreground: 220 10% 60%;
+    --muted: 218 18% 91%;
+    /* Gris acero darkened so body text passes WCAG AA on white and gris claro */
+    --muted-foreground: 212 14% 36%;
 
-    --accent: 42 100% 50%;
-    --accent-foreground: 220 20% 10%;
+    --accent: 218 18% 91%;
+    --accent-foreground: 209 92% 16%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 22%;
-    --input: 220 15% 22%;
-    --ring: 42 100% 50%;
+    --border: 218 18% 85%;
+    --input: 218 18% 85%;
+    --ring: 209 99% 43%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 220 18% 12%;
-    --sidebar-foreground: 45 10% 92%;
-    --sidebar-primary: 42 100% 50%;
-    --sidebar-primary-foreground: 220 20% 10%;
-    --sidebar-accent: 220 15% 18%;
-    --sidebar-accent-foreground: 45 10% 92%;
-    --sidebar-border: 220 15% 22%;
-    --sidebar-ring: 42 100% 50%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 209 92% 16%;
+    --sidebar-primary: 209 99% 43%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 218 18% 91%;
+    --sidebar-accent-foreground: 209 92% 16%;
+    --sidebar-border: 218 18% 85%;
+    --sidebar-ring: 209 99% 43%;
 
     /* Custom tokens */
-    --amber: 42 100% 50%;
-    --amber-hover: 42 100% 45%;
-    --navy: 220 20% 10%;
-    --navy-light: 220 18% 14%;
-    --navy-lighter: 220 15% 18%;
-    --text-dim: 220 10% 55%;
-    --text-bright: 45 10% 95%;
+    --navy: 209 92% 16%;
+    --steel: 212 11% 53%;
     --whatsapp: 142 70% 40%;
     --whatsapp-hover: 142 70% 35%;
   }
@@ -70,11 +74,10 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-display;
   }
-}
 
-@layer utilities {
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-[hsl(var(--amber))] to-[hsl(42,100%,65%)];
+  /* Keep anchored sections clear of the fixed header */
+  section[id] {
+    scroll-margin-top: 7rem;
   }
 }
 
