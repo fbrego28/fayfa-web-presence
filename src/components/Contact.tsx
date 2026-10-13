@@ -23,11 +23,12 @@ const Contact = () => {
     const data = new FormData(form);
 
     try {
-      await fetch("https://formspree.io/f/xpwdjqvl", {
+      const res = await fetch("https://formspree.io/f/xpwdjqvl", {
         method: "POST",
         body: data,
         headers: { Accept: "application/json" },
       });
+      if (!res.ok) throw new Error(`Formspree responded ${res.status}`);
       setSent(true);
       form.reset();
     } catch {
@@ -165,7 +166,6 @@ const Contact = () => {
               placeholder="Por favor describa su necesidad con el mayor detalle posible."
               className="w-full px-4 py-3 rounded-md bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary text-sm resize-none"
             />
-            <input type="hidden" name="_replyto" value="" />
             <button
               type="submit"
               disabled={sending}

@@ -1,4 +1,5 @@
-import heroVideo from '../assets/hero-video.mp4.asset.json';
+import heroVideo from "@/assets/hero-video.mp4";
+import heroPoster from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
@@ -9,9 +10,9 @@ const Hero = () => {
         muted
         loop
         playsInline
-        src={heroVideo.url}
+        src={heroVideo}
+        poster={heroPoster}
         className="absolute inset-0 w-full h-full object-cover object-center"
-        style={{ objectFit: 'cover', transform: 'none' }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-navy/50 via-navy/35 to-navy/80" />
 
