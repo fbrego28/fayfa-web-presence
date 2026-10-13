@@ -48,7 +48,7 @@ const FAQ = () => (
                     href={f.link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary underline hover:text-amber-hover"
+                    className="text-primary underline hover:text-foreground"
                   >
                     {f.link.label}
                   </a>

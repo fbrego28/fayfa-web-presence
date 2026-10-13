@@ -23,11 +23,12 @@ const Contact = () => {
     const data = new FormData(form);
 
     try {
-      await fetch("https://formspree.io/f/xpwdjqvl", {
+      const res = await fetch("https://formspree.io/f/xpwdjqvl", {
         method: "POST",
         body: data,
         headers: { Accept: "application/json" },
       });
+      if (!res.ok) throw new Error(`Formspree responded ${res.status}`);
       setSent(true);
       form.reset();
     } catch {
@@ -57,7 +58,7 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 p-6 rounded-lg border border-border bg-card hover:border-whatsapp/60 transition-colors text-center"
           >
-            <MessageSquare size={28} className="text-whatsapp" />
+            <MessageSquare size={28} className="text-whatsapp-hover" />
             <span className="font-display text-sm font-bold uppercase text-foreground">
               Dueño
             </span>
@@ -74,7 +75,7 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 p-6 rounded-lg border border-border bg-card hover:border-whatsapp/60 transition-colors text-center"
           >
-            <MessageSquare size={28} className="text-whatsapp" />
+            <MessageSquare size={28} className="text-whatsapp-hover" />
             <span className="font-display text-sm font-bold uppercase text-foreground">
               Oficina
             </span>
@@ -165,11 +166,10 @@ const Contact = () => {
               placeholder="Por favor describa su necesidad con el mayor detalle posible."
               className="w-full px-4 py-3 rounded-md bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary text-sm resize-none"
             />
-            <input type="hidden" name="_replyto" value="" />
             <button
               type="submit"
               disabled={sending}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-md bg-primary text-primary-foreground font-display font-bold uppercase tracking-wider text-sm hover:bg-amber-hover transition-colors disabled:opacity-50"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-md bg-primary text-primary-foreground font-display font-bold uppercase tracking-wider text-sm hover:bg-primary/90 transition-colors disabled:opacity-50"
             >
               <Send size={16} />
               {sending ? "Enviando..." : "Enviar Mensaje"}
