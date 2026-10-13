@@ -18,7 +18,7 @@ const Footer = () => (
         <div>
           <img src={logo} alt="FAYFA" width={2137} height={560} className="w-48 h-auto mb-6" />
           <p className="text-sm">
-            13 años de experiencia en camiones, repuestos y equipo pesado.
+            14 años de experiencia en camiones, repuestos y equipo pesado.
           </p>
         </div>
 
@@ -95,7 +95,7 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-white/15 pt-6 text-center text-xs text-white/60">
-        © 2025 Repuestos Fayfa. Todos los derechos reservados.
+        © 2026 FayFa. Todos los derechos reservados.
       </div>
     </div>
   </footer>
